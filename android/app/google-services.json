@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "535421916951",
+    "project_id": "cubcare-d37d8",
+    "storage_bucket": "cubcare-d37d8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:535421916951:android:52d5199a5fab23c28fc952",
+        "android_client_info": {
+          "package_name": "com.example.cubcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "535421916951-k7ncn02gkv5vobf4govtlj4hovibjq54.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cubcare",
+            "certificate_hash": "e570cab66eace1fafab1a6daf3a8c3f9ba8c53fe"
+          }
+        },
+        {
+          "client_id": "535421916951-o75r0rv75bu8l45kcftlunj7jfbc8q26.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZquqq_C7iHzTaYBgFw5lpUG-vgazA-jE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "535421916951-o75r0rv75bu8l45kcftlunj7jfbc8q26.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,183 @@
+name: phone_verification
+description: A new Flutter application.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+   
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons:
+  firebase_core:
+  carousel_slider:
+  webview_flutter:  
+  url_launcher: 
+  http:
+
+
+  
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+   - images/nandd.jfif
+   - images/collar.jfif
+   - images/leash.jfif
+   - images/harness.jfif
+   - images/munchies.jfif
+   - images/chewstick.jfif
+   - images/bone.jfif
+   - images/royalcanin.jfif
+   - images/PEDIGREE.jfif
+   - images/cafe.jfif
+   - images/park3.jpg
+   - images/park2.jfif
+   - images/park1.jfif
+   - images/pitbull1.jfif
+   - images/pitbull2.jfif
+   - images/pitbull3.jfif
+   - images/park.jpg
+   - images/trainer1.png
+   - images/trainer.png
+   - images/vet.png
+   - images/contact.png
+   - images/dobie.jpg
+   - images/doginfo.jfif
+   - images/gsd.jpg
+   - images/husky.jfif
+   - images/my dog.jfif
+   - images/park.jfif
+   - images/shop.jfif
+   - images/trainer.jpg
+   - images/vet.jpg
+   - images/cane.jfif
+   - images/retri.jpg
+   - images/login.png
+   - images/stack.png
+   - images/register.png
+   - images/pitbull.jfif
+   - images/retriever.jfif
+   - images/german.jfif
+   - images/dobberman.jfif
+   - images/shizu.jfif
+   - images/gd1.jfif
+   - images/dogfood.jfif
+   - images/dogfood1.jfif
+   - images/grooming.jfif
+   - images/training.png
+   - images/therapy.jfif
+   - images/medicine.jfif
+   - images/health.png
+   - images/behaviour.jfif
+   - images/gd2.jfif
+   - images/gd3.jfif
+   - images/doberman1.jfif
+   - images/doberman2.jfif
+   - images/doberman3.jfif
+   - images/pug1.jfif
+   - images/pug2.jfif
+   - images/pug3.jfif
+   - images/rot1.jfif
+   - images/rot2.jfif
+   - images/rot3.jfif
+   - images/shi1.jfif
+   - images/shi2.jfif
+   - images/shi3.jfif
+   - images/gsd1.jfif
+   - images/gsd2.jfif
+   - images/gsd3.jfif
+   - images/ib3.webp
+   - images/ib2.jfif
+   - images/ib1.jfif
+   - images/bboxer1.jpg
+   - images/lab2.jfif
+   - images/lab3.jfif
+   - images/lab4.jfif
+   - images/p1.jfif
+   - images/p2.jfif
+   - images/p3.jfif
+   - images/da1.jpg
+   - images/da2.jfif
+   - images/sb1.jfif
+   - images/sb2.jfif
+   - images/sb3.jfif
+   - images/da3.jfif
+   - images/boxer2.jfif
+   - images/boxer3.jfif
+   - images/rottie.jfif
+   - images/pug.jfif
+   - images/pamorian.jfif
+   - images/lab.jfif
+   - images/huskyy.jfif
+   - images/dogo.jfif
+   - images/boxer.jfif
+   - images/bully.jfif
+   - images/to do.jfif
+   - images/nottodo.jfif
+   - images/insaurance.jfif
+   - images/liences.png
+
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
