@@ -1,11 +1,11 @@
 import 'dart:convert';
 
 class Places {
-  final String name;
-  final String Open_time;
-  final String Close_time;
-  final String Address;
-  final String link;
+  final String? name;
+  final String? Open_time;
+  final String? Close_time;
+  final String? Address;
+  final String? link;
 
 
   Places({this.name, this.Open_time,this.Close_time, this.Address,this.link} );

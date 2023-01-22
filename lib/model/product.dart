@@ -1,8 +1,8 @@
 
 class Product {
-  final String name;
-  final String Price;
-  final String link;
+  final String? name;
+  final String? Price;
+  final String? link;
 
   Product({this.name, this.Price,this.link} );
 

@@ -17,7 +17,7 @@ class product extends StatefulWidget {
 }
 
 class _productState extends State<product> {
-  Future<List<Product>>product;
+  late Future<List<Product>>product;
   final breedListKey = GlobalKey<_productState>();
 
 
@@ -28,7 +28,7 @@ class _productState extends State<product> {
   }
 
   Future<List<Product>> getproductList() async {
-    final response = await http.get("${Env.URL_PREFIX}/ProductViewSet");
+    final response = await http.get(Uri.parse("${Env.URL_PREFIX}/ProductViewSet"));
 
     final items = json.decode(response.body).cast<Map<String, dynamic>>();
     List<Product> product = items.map<Product>((json) {

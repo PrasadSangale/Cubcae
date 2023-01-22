@@ -1,9 +1,9 @@
 import 'dart:convert';
 
 class Breed_info {
-  final String name;
-  final String information;
-  final String link;
+  final String? name;
+  final String? information;
+  final String? link;
 
   Breed_info({this.name, this.information,this.link} );
 

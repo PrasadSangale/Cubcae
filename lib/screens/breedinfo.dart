@@ -13,7 +13,7 @@ class breedinfo extends StatefulWidget {
 }
 
 class _breedinfoState extends State<breedinfo> {
-  Future<List<Breed_info>>breed;
+  late Future<List<Breed_info>>breed;
   final breedListKey = GlobalKey<_breedinfoState>();
 
 
@@ -24,7 +24,7 @@ class _breedinfoState extends State<breedinfo> {
   }
 
   Future<List<Breed_info>> getbreedList() async {
-    final response = await http.get("${Env.URL_PREFIX}/Breed_infoViewSet");
+    final response = await http.get(Uri.parse("${Env.URL_PREFIX}/Breed_infoViewSet"));
 
     final items = json.decode(response.body).cast<Map<String, dynamic>>();
     List<Breed_info> breed = items.map<Breed_info>((json) {

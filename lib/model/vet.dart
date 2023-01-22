@@ -1,10 +1,10 @@
 import 'dart:convert';
 
 class Vet {
-  final String name;
-  final String Contact_info;
-  final String Address;
-  final String link;
+  final String? name;
+  final String? Contact_info;
+  final String? Address;
+  final String? link;
 
   Vet({this.name, this.Contact_info, this.Address,this.link} );
 

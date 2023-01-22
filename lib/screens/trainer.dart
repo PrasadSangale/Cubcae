@@ -15,7 +15,7 @@ class trainer extends StatefulWidget {
 }
 
 class _trainerState extends State<trainer> {
-  Future<List<Trainer>> trainer;
+  late Future<List<Trainer>> trainer;
   final trainerListKey = GlobalKey<_trainerState>();
 
   @override
@@ -28,7 +28,7 @@ class _trainerState extends State<trainer> {
 
   Future<List<Trainer>> getTrainerList() async {
     print('1');
-    final response = await http.get("${Env.URL_PREFIX}/TrainerViewSet");
+    final response = await http.get(Uri.parse("${Env.URL_PREFIX}/TrainerViewSet"));
     print('2');
     final items = json.decode(response.body).cast<Map<String, dynamic>>();
     print('3');

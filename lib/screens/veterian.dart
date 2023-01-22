@@ -13,7 +13,7 @@ class veterian extends StatefulWidget {
 }
 
 class _veterianState extends State<veterian> {
-  Future<List<Vet>>veterian;
+  late Future<List<Vet>>veterian;
   final vetListKey = GlobalKey<_veterianState>();
 
 
@@ -24,7 +24,7 @@ class _veterianState extends State<veterian> {
   }
 
   Future<List<Vet>> getveterianList() async {
-    final response = await http.get("${Env.URL_PREFIX}/VetViewSet");
+    final response = await http.get(Uri.parse("${Env.URL_PREFIX}/VetViewSet"));
 
     final items = json.decode(response.body).cast<Map<String, dynamic>>();
     List<Vet> veterian = items.map<Vet>((json) {

@@ -16,7 +16,7 @@ class places extends StatefulWidget {
 }
 
 class _placesState extends State<places> {
-  Future<List<Places>>places;
+  late Future<List<Places>>places;
   final placesListKey = GlobalKey<_placesState>();
 
 
@@ -27,7 +27,7 @@ class _placesState extends State<places> {
   }
 
   Future<List<Places>> getplacesList() async {
-    final response = await http.get("${Env.URL_PREFIX}/PlacesViewSet");
+    final response = await http.get(Uri.parse("${Env.URL_PREFIX}/PlacesViewSet"));
 
     final items = json.decode(response.body).cast<Map<String, dynamic>>();
     List<Places> places = items.map<Places>((json) {

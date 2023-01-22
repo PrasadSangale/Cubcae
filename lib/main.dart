@@ -47,9 +47,9 @@ class InitializerWidget extends StatefulWidget {
 }
 
 class _InitializerWidgetState extends State<InitializerWidget> {
-  FirebaseAuth _auth;
+  late FirebaseAuth _auth;
 
-  User _user;
+  late User _user;
 
   bool isLoading = true;
 
@@ -58,10 +58,10 @@ class _InitializerWidgetState extends State<InitializerWidget> {
     // TODO: implement initState
     super.initState();
     _auth = FirebaseAuth.instance;
-    _user = _auth.currentUser;
+    _user = _auth.currentUser!;
     isLoading = false;
     print(_user);
-    
+
 
 
   }

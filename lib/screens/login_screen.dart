@@ -32,7 +32,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   FirebaseAuth _auth = FirebaseAuth.instance;
 
-  String verificationId;
+  String verificationId = "";
 
   bool showLoading = false;
 
@@ -61,7 +61,7 @@ class _LoginScreenState extends State<LoginScreen> {
       });
 
       _scaffoldKey.currentState
-          .showSnackBar(SnackBar(content: Text(e.message)));
+          ?.showSnackBar(SnackBar(content: Text(e.message ?? "")));
     }
   }
 
@@ -117,8 +117,8 @@ class _LoginScreenState extends State<LoginScreen> {
                 setState(() {
                   showLoading = false;
                 });
-                _scaffoldKey.currentState.showSnackBar(
-                    SnackBar(content: Text(verificationFailed.message)));
+                _scaffoldKey.currentState?.showSnackBar(
+                    SnackBar(content: Text(verificationFailed.message ?? "")));
               },
               codeSent: (verificationId, resendingToken) async {
                 setState(() {
